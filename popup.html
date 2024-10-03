@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Saver</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="main-screen">
+      <h1>Profile Saver</h1>
+      <p>Add your profiles to easily copy them later.</p>
+      <input type="text" id="profileName" placeholder="Profile Name">
+      <input type="url" id="profileURL" placeholder="Profile URL">
+      <button id="saveProfile"><i class="fas fa-save"></i> Save Profile</button>
+      <button id="viewSavedProfiles"><i class="fas fa-eye"></i> Show Saved Profiles</button>
+    </div>
+
+    <div id="saved-screen" style="display:none;">
+      <h1>Saved Profiles</h1>
+      <div id="profiles"></div>
+      <button id="goBack"><i class="fas fa-arrow-left"></i> Go Back</button>
+    </div>
+
+    <div id="notifications"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

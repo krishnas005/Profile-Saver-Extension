@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Profile Saver Extension",
+  "version": "1.2",
+  "description": "Save and organize your profile links (LinkedIn, GitHub, etc.) and copy them easily when filling forms.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

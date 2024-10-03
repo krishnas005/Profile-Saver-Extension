@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 320px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+button#saveProfile {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+}
+
+button#viewSavedProfiles {
+  background-color: #28a745;
+  color: white;
+  width: 100%;
+  margin-top: 8px;
+}
+
+button#goBack {
+  background-color: #ff6347;
+  color: white;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#notifications {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  display: none;
+  border-radius: 5px;
+}
+
+.profile-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.profile-text {
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 5px; 
+}
+
+.profile-actions button {
+  padding: 5px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-actions button i {
+  font-size: 18px;
+}
+
+.profile-actions button.copy i {
+  color: #17a2b8;
+}
+
+.profile-actions button.delete i {
+  color: #dc3545;
+}
+
+.profile-item button:hover i {
+  opacity: 0.8;
+}
